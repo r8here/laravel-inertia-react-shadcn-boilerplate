@@ -12,19 +12,16 @@
     "authors": [
         {
             "name": "Abid Raza",
-            "email": "ari.abid@gmail.com",
             "homepage": "https://github.com/ariabid",
             "role": "Developer"
         },
         {
             "name": "Shubham Surya",
-            "email": "shubhamsurya95@gmail.com",
             "homepage": "https://github.com/ninja1ndia",
             "role": "Developer"
         },
         {
             "name": "Gautam Kumar",
-            "email": "gtmkmr2u@gmail.com",
             "homepage": "https://github.com/r8here",
             "role": "Developer"
         }
@@ -32,7 +29,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "inertiajs/inertia-laravel": "^1.0",
+        "inertiajs/inertia-laravel": "^2.0",
         "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
@@ -76,9 +73,7 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate --ansi",
-            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
-            "@php artisan migrate --graceful --ansi"
+            "@php artisan key:generate --ansi"
         ]
     },
     "extra": {
